@@ -14,13 +14,13 @@
         <section>
             <form action="#">
                 <label for="#">
-                    <input type="number" name="decimal" id="decimal">
+                    <input type="number" name="decimal" id="decimal" min="0" max="99999999" value="0">
                 </label>
-                <button>Convertir</button>
+                <button onclick=convertir(event)>Convertir</button>
             </form>
-            <div id="resultado">
-                <h4>Tu numero binario es</h4>
-
+            <div>
+           <p>Decimal: <span id="lugarDecimal"></span></p>
+           <p>Binario: <span id="resultado"></span></p>
             </div>
         </section>
     </main>
